@@ -1,0 +1,10 @@
+LDA A
+A1: OUT
+ADD C
+STA A
+ISZ B
+BUN A1
+HLT
+A: .data 1 [10]
+B: .data 1 [-10]
+C: .data 1 [-1]

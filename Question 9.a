@@ -1,0 +1,13 @@
+A1:   INP
+SNA
+BUN A2
+LDA S
+OUT
+HLT
+A2:   STA  A
+LDA S
+ADD A
+STA S
+BUN A1
+A: .data 4 0
+S: .data 4 0

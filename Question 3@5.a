@@ -1,0 +1,8 @@
+INP
+STA A
+INP
+ADD A
+CMA
+OUT
+HLT
+A: .data 4 0

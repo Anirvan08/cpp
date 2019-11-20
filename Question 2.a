@@ -1,0 +1,19 @@
+INP 
+STA A
+INP 
+STA B
+A1:     SZA
+	BUN A2
+	LDA A
+	OUT 
+	HLT
+A2:     LDA A
+	ADD C
+	STA A
+	LDA B	
+	ADD C
+	STA B
+	BUN A1
+A: .data 2 0
+B: .data 2 0
+C: .data 2 -1
